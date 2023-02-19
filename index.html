@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="discription" content="ユーザビリティを強化した次世代型タイマー">
+</head>
+<body>
+    <div id="main">
+        <div id="timerUnit">
+            <div id="timer">
+                <div id="hour" class="numTm">
+                    <div id="hourCt" class="ctSc"><div id="hourCtSc"></div></div>
+                    <p id="hourTx" class="tmTx">00</p>
+                </div>
+                <div class="comTm">
+                    <p class="tmTx">:</p>
+                </div>
+                <div id="min" class="numTm">
+                    <div id="minCt" class="ctSc"><div id="minCtSc"></div></div>
+                    <p id="minTx" class="tmTx">00</p>
+                </div>
+                <div class="comTm">
+                    <p class="tmTx">:</p>
+                </div>
+                <div id="sec" class="numTm">
+                    <div id="secCt" class="ctSc"><div id="secCtSc"></div></div>
+                    <p id="secTx" class="tmTx">00</p>
+                </div>
+            </div>
+            <div id="btUnit">
+                <div id="actionBt1" class="button actionBt">
+                    <p id="actionBt1Tx" class="buttonTx actionBtTx">Start</p>
+                </div>
+                <div id="actionBt2" class="button actionBt">
+                    <p id="actionBt2Tx" class="buttonTx actionBtTx">Reset</p>
+                </div>
+                <input type="file" name="fileSlct" id="fileSlct" accept="audio/*"><label for="fileSlct" id="fileSlctLabel">
+                    <div class="button fileSlct">
+                        <p class="buttonTx fileSlctTx1">Alarm Sound &gt;&gt;&gt; Default</p><p class="buttonTx fileSlctTx2">Sound Change</p>
+                    </div>
+                </label>
+                <div id="fileDel" class="button fileSlct hide">
+                    <p class="buttonTx fileSlctTx1 overflowHide">Alarm Sound &gt;&gt;&gt; <span id="fileName">null</span></p><p class="buttonTx fileSlctTx2">Sound Reset</p>
+                </div>
+                <div id="settingOpBt" class="button actionBt">
+                    <p id="settingOpBtTx" class="buttonTx">Help</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="seekbar"></div>
+    <div id="settingWindow" class="hide">
+        <div class="settingWindow">
+            <!--将来的に設定項目を追加するかも-->
+            <h1>ヘルプ</h1>
+            <h2>時間の設定方法</h2>
+            <p>数字部分をスクロール、又はスワイプすることで設定できます。</p>
+            <p>※PCの場合、スクロール量の設定を変更していると正常に動作しない場合があります。</p>
+            <h2>音の変更</h2>
+            <p>「Sound Change」をクリックすると端末内の好きな音声に変更できます。</p>
+            <p>デフォルトの音に戻したい場合は「Sound Reset」をクリックしてください。</p>
+            <h2>動作確認済ブラウザ</h2>
+            <p>
+                ・Google Chrome（PC・Android）<br>
+                ・Microsoft Edge（PC・Android・iOS）<br>
+                ・Safari（iOS）
+            </p>
+            <h2>スマートフォンで利用する場合</h2>
+            <p>横画面での利用を推奨します。</p>
+            <p>iPhone・iPadで時間の設定ができなくなる場合があります。<br>その際は「Reset」を押すことで改善する場合があります。</p>
+            <h1>リンク</h1>
+            <p><a href="https://twitter.com/neyatetsu">開発者のTwitter</a></p>
+            <div id="settingClsBt">
+                <p id="settingClsBtTx">閉じる</p>
+            </div>
+        </div>
+    </div>
+    <script src="setting.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

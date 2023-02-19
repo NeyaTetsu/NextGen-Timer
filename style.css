@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+h1{
+    margin: 4px 0;
+    font-size: 32px;
+    font-weight: 500;
+}
+h2{
+    margin: 4px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+p{
+    margin: 4px 0;
+    font-size: 20px;
+}
+
+a{
+    color: #39C5BB;
+    text-decoration: none;
+}
+
+
+#main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#timer{
+    display: flex;
+    justify-content: center;
+    font-size: 15vw;
+    font-weight: bold;
+}
+
+.numTm{
+    width: 24vw;
+    height: 24vw;
+    text-align: center;
+}
+.comTm{
+    width: 6vw;
+    height: 24vw;
+    text-align: center;
+}
+.tmTx{
+    font-size: 16vw;
+    margin: 0;
+}
+
+.ctSc{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 24vw;
+    height: 20vw;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.ctSc::-webkit-scrollbar{
+    display: none;
+}
+#hourCtSc{
+    width: 100%;
+    height: calc(100% + 23px * 120 + 1px);
+}
+#minCtSc{
+    width: 100%;
+    height: calc(100% + 59px * 120 + 1px);
+}
+#secCtSc{
+    width: 100%;
+    height: calc(100% + 59px * 120 + 1px);
+}
+
+
+#btUnit{
+    display: flex;
+    justify-content: center;
+    margin-top: -3vw;
+    margin-bottom: 5vw;
+}
+
+.button{
+    background-color: #fafafa;
+    padding: 1vw 0vw;
+    border: 1px solid #eee;
+    border-radius: 1.5vw;
+    margin: 0 1vw;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #f0f0f0;
+}
+.buttonTx{
+    text-align: center;
+    color: #222;
+}
+
+.actionBt{
+    width: 14vw;
+}
+.actionBtTx{
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.fileSlct{
+    width: 24vw;
+}
+.fileSlctTx1{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.fileSlctTx2{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.overflowHide{
+    padding: 0 1.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#settingOpBtTx{
+    font-size: 3vw;
+    font-weight: 400;
+}
+
+#fileSlct{
+    display: none;
+}
+
+
+.timerUp0{
+    color: #a00;
+    opacity: 1;
+}
+.timerUp1{
+    color: #a00;
+    opacity: 0;
+}
+
+
+#seekbar{
+    position: absolute;
+    z-index: 1;
+    background-color: #aaa;
+    height: 1vw;
+    width: 100%;
+    transform: translate(0%,-100%);
+    top: 100%;
+    left: -100%;
+}
+
+
+#settingWindow{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    overflow: scroll;
+    top: 0;
+    left: 0;
+}
+.settingWindow{
+    background-color: #fff;
+    width: 800px;
+    max-width: 90%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 20px auto;
+}
+
+.setting{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/*input[type="checkbox"]{
+    display: none;
+}
+.switch{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 40px;
+    margin-right: 18px;
+    background: #ddd;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+.switch::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 36px;
+    background-color: #fff;
+    left: 2px;
+    top: 2px;
+    transition: left .3s;
+}
+input[type="checkbox"]:checked + .switch{
+    background-color: #222;
+}
+input[type="checkbox"]:checked + .switch::before{
+    left: 40px;
+}*/
+
+#settingClsBt{
+    background-color: #fafafa;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-top: 12px;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+#settingClsBt:hover{
+    background-color: #f0f0f0;
+}
+#settingClsBtTx{
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+}
+
+
+.hide{
+    display: none;
+}
